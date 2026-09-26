@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Book Appointment | Dr. Deepak Koppaka
+  </title>
+  <link rel="icon" type="image/jpeg" href="assets/images/logo2.png">
+
+  <meta
+    name="description"
+    content="Book an appointment with Dr. Deepak Koppaka, Medical Oncologist."
+  >
+
+
+  <!-- FONT AWESOME -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  >
+
+
+  <!-- COMMON -->
+  <link
+    rel="stylesheet"
+    href="css/common.css"
+  >
+
+
+  <!-- HEADER FOOTER -->
+  <link
+    rel="stylesheet"
+    href="css/header-footer.css"
+  >
+
+
+  <!-- CONTACT / APPOINTMENT -->
+  <link
+    rel="stylesheet"
+    href="css/contact-appointment.css"
+  >
+
+
+</head>
+
+
+<body>
+
+
+  <!-- ==========================================
+       REUSABLE HEADER
+  =========================================== -->
+
+  <div class="shared-header"></div>
+
+
+
+  <main>
+
+
+    <!-- ==========================================
+         PAGE BANNER
+    =========================================== -->
+
+    <section class="inner-page-banner">
+
+
+      <div class="contact-page-container">
+
+
+        <div class="breadcrumb">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <i class="fa-solid fa-chevron-right"></i>
+
+          <span>
+            Book Appointment
+          </span>
+
+        </div>
+
+
+        <h1>
+          Book Appointment
+        </h1>
+
+
+        <p>
+
+          Schedule your consultation with
+          Dr. Deepak Koppaka for personalised and
+          comprehensive cancer care.
+
+        </p>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         APPOINTMENT SECTION
+    =========================================== -->
+
+    <section class="appointment-main-section">
+
+
+      <div class="contact-page-container">
+
+
+        <div class="appointment-grid">
+
+
+          <!-- =====================================
+               LEFT DOCTOR
+          ====================================== -->
+
+          <div class="appointment-doctor-card">
+
+
+            <div class="appointment-doctor-image">
+
+
+              <!--
+                Add your doctor image here:
+
+                assets/images/doctor-appointment.jpg
+              -->
+
+              <img
+                src="assets/images/doctor.jpg"
+                alt="Dr. Deepak Koppaka - Medical Oncologist"
+              >
+
+
+            </div>
+
+
+
+            <div class="appointment-doctor-content">
+
+
+              <span class="doctor-card-label">
+                CONSULTATION
+              </span>
+
+
+              <h2>
+                Dr. Deepak Koppaka
+              </h2>
+
+
+              <h3>
+                Medical Oncologist
+              </h3>
+
+
+              <p>
+
+                Consult for comprehensive,
+                evidence-based and personalised
+                cancer care, treatment planning
+                and follow-up.
+
+              </p>
+
+
+              <div class="doctor-card-divider"></div>
+
+
+              <div class="doctor-card-point">
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                  Personalised Cancer Care
+                </span>
+
+              </div>
+
+
+              <div class="doctor-card-point">
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                  Evidence-Based Treatment
+                </span>
+
+              </div>
+
+
+              <div class="doctor-card-point">
+
+                <i class="fa-solid fa-check"></i>
+
+                <span>
+                  Comprehensive Consultation
+                </span>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- =====================================
+               RIGHT APPOINTMENT FORM
+          ====================================== -->
+
+          <div class="medical-form-card appointment-form-card">
+
+
+            <div class="section-tag">
+
+              <i class="fa-regular fa-calendar-check"></i>
+
+              <span>
+                APPOINTMENT
+              </span>
+
+            </div>
+
+
+            <h2 class="form-main-title">
+
+              Book Your
+
+              <span>
+                Appointment
+              </span>
+
+            </h2>
+
+
+            <p class="form-description">
+
+              Fill in your details and our team will
+              contact you to confirm your appointment.
+
+            </p>
+
+
+
+            <form
+              id="appointmentForm"
+              class="medical-form"
+              action="php/send-mail.php"
+              method="POST"
+            >
+
+
+              <input
+                type="hidden"
+                name="form_type"
+                value="appointment"
+              >
+
+
+
+              <!-- ==================================
+                   ROW 1
+              =================================== -->
+
+              <div class="form-row">
+
+
+                <div class="form-group">
+
+                  <label for="appointmentName">
+                    Full Name
+                  </label>
+
+                  <input
+                    type="text"
+                    id="appointmentName"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                  >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                  <label for="appointmentEmail">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    id="appointmentEmail"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                  >
+
+                </div>
+
+
+              </div>
+
+
+
+              <!-- ==================================
+                   ROW 2
+              =================================== -->
+
+              <div class="form-row">
+
+
+                <div class="form-group">
+
+                  <label for="appointmentPhone">
+                    Phone Number
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="appointmentPhone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                  <label for="appointmentDate">
+                    Preferred Date
+                  </label>
+
+                  <input
+                    type="date"
+                    id="appointmentDate"
+                    name="appointment_date"
+                    required
+                  >
+
+                </div>
+
+
+              </div>
+
+
+
+              <!-- ==================================
+                   SERVICE
+              =================================== -->
+
+              <div class="form-group">
+
+
+                <label for="appointmentService">
+                  Type Of Service
+                </label>
+
+
+                <select
+                  id="appointmentService"
+                  name="service"
+                  required
+                >
+
+
+                  <option value="">
+                    Select Service
+                  </option>
+
+
+                  <option value="Medical Oncology Consultation">
+                    Medical Oncology Consultation
+                  </option>
+
+
+                  <option value="Chemotherapy">
+                    Chemotherapy
+                  </option>
+
+
+                  <option value="Immunotherapy">
+                    Immunotherapy
+                  </option>
+
+
+                  <option value="Targeted Therapy">
+                    Targeted Therapy
+                  </option>
+
+
+                  <option value="Hormonal Therapy">
+                    Hormonal Therapy
+                  </option>
+
+
+                  <option value="Precision Oncology">
+                    Precision Oncology
+                  </option>
+
+
+                  <option value="Second Opinion">
+                    Second Opinion
+                  </option>
+
+
+                  <option value="Follow-up Consultation">
+                    Follow-up Consultation
+                  </option>
+
+
+                </select>
+
+
+              </div>
+
+
+
+              <!-- ==================================
+                   MESSAGE
+              =================================== -->
+
+              <div class="form-group">
+
+
+                <label for="appointmentMessage">
+                  Message
+                </label>
+
+
+                <textarea
+                  id="appointmentMessage"
+                  name="message"
+                  rows="6"
+                  placeholder="Tell us briefly how we can assist you..."
+                ></textarea>
+
+
+              </div>
+
+
+
+              <!-- BUTTON -->
+
+              <button
+                type="submit"
+                class="medical-submit-btn"
+              >
+
+
+                <span>
+                  Book Appointment
+                </span>
+
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+
+              </button>
+
+
+
+              <div
+                class="form-status"
+                aria-live="polite"
+              ></div>
+
+
+            </form>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ==========================================
+       REUSABLE FOOTER
+  =========================================== -->
+
+  <div class="shared-footer"></div>
+
+
+
+  <!-- ==========================================
+       JS
+  =========================================== -->
+
+  <script src="js/shared.js"></script>
+
+  <script src="js/contact-appointment.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1099 @@
+/* ============================================================
+   DR. DEEPAK KOPPAKA
+   TREATMENT DETAILS PAGE
+============================================================ */
+
+:root {
+  --treatment-navy: #122e68;
+  --treatment-blue: #0d477d;
+  --treatment-purple: #7b2fa1;
+  --treatment-purple-dark: #632284;
+
+  --treatment-text: #39475d;
+  --treatment-muted: #68758a;
+
+  --treatment-light: #f7f8fc;
+  --treatment-card: #f0f2f7;
+
+  --treatment-border: #e1e5ed;
+
+  --white: #ffffff;
+}
+
+
+/* ============================================================
+   BASIC
+============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--treatment-text);
+}
+
+.treatment-container {
+  width: min(92%, 1440px);
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   BREADCRUMB
+============================================================ */
+
+.treatment-breadcrumb {
+  position: relative;
+
+  background:
+    linear-gradient(
+      110deg,
+      #084c75 0%,
+      #185f91 46%,
+      #543a88 100%
+    );
+
+  padding: 62px 0 66px;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+.treatment-breadcrumb::before {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  top: -180px;
+  right: -100px;
+}
+
+
+.breadcrumb-inner {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+.breadcrumb-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.breadcrumb-links a,
+.breadcrumb-links span {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.breadcrumb-links i {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+
+.breadcrumb-inner h1 {
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 5vw, 62px);
+
+  line-height: 1.08;
+
+  font-weight: 800;
+}
+
+
+.breadcrumb-inner > p {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+
+/* ============================================================
+   INTRO
+============================================================ */
+
+.treatment-intro {
+  padding: 72px 0 42px;
+}
+
+
+.treatment-intro-inner {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: var(--treatment-purple);
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+
+  text-transform: uppercase;
+}
+
+
+.treatment-intro h2 {
+  max-width: 1150px;
+
+  margin: 0 auto 22px;
+
+  color: var(--treatment-navy);
+
+  font-size: clamp(38px, 4.2vw, 58px);
+
+  line-height: 1.17;
+
+  font-weight: 800;
+}
+
+
+.treatment-intro p {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  color: var(--treatment-muted);
+
+  font-size: 19px;
+
+  line-height: 1.8;
+}
+
+
+/* ============================================================
+   GENERAL SECTIONS
+============================================================ */
+
+.treatment-section {
+  padding: 80px 0;
+}
+
+
+.treatment-soft-bg {
+  background: var(--treatment-light);
+}
+
+
+.treatment-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.08fr)
+    minmax(380px, 0.92fr);
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+.treatment-row-reverse {
+  grid-template-columns:
+    minmax(380px, 0.92fr)
+    minmax(0, 1.08fr);
+}
+
+
+.treatment-content h2 {
+  margin: 0 0 24px;
+
+  color: var(--treatment-navy);
+
+  font-size: clamp(32px, 3vw, 43px);
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+
+/* ============================================================
+   RICH CONTENT
+============================================================ */
+
+.treatment-rich-content {
+  color: var(--treatment-text);
+
+  font-size: 16px;
+
+  line-height: 1.82;
+}
+
+
+.treatment-rich-content p {
+  margin: 0 0 18px;
+
+  color: var(--treatment-text);
+
+  font-size: 16px;
+
+  line-height: 1.82;
+}
+
+
+.treatment-rich-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+.treatment-rich-content strong {
+  color: var(--treatment-navy);
+  font-weight: 750;
+}
+
+
+.content-subheading {
+  margin: 28px 0 15px;
+
+  color: var(--treatment-navy);
+
+  font-size: 22px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+}
+
+
+.treatment-rich-content ul,
+.treatment-check-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 20px 0 0;
+}
+
+
+.treatment-rich-content li,
+.treatment-check-list li {
+  position: relative;
+
+  padding-left: 30px;
+
+  margin-bottom: 13px;
+
+  color: var(--treatment-text);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+.treatment-rich-content li::before,
+.treatment-check-list li::before {
+  content: "\f058";
+
+  font-family: "Font Awesome 6 Free";
+
+  font-weight: 900;
+
+  position: absolute;
+
+  left: 0;
+
+  top: 1px;
+
+  color: var(--treatment-purple);
+}
+
+
+/* ============================================================
+   IMAGES
+============================================================ */
+
+.treatment-image-wrap {
+  width: 100%;
+
+  position: relative;
+}
+
+
+.treatment-image {
+  display: block;
+
+  width: 100%;
+
+  height: 520px;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 22px;
+
+  background: #f3f4f7;
+
+  box-shadow:
+    0 16px 45px
+    rgba(21, 45, 90, 0.12);
+}
+
+
+/* ============================================================
+   BENEFITS / RECOMMENDED
+============================================================ */
+
+.two-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+
+.info-card {
+  position: relative;
+
+  padding: 38px;
+
+  border: 1px solid var(--treatment-border);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f7f8fc,
+      #eef0f6
+    );
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.info-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 16px 40px
+    rgba(18, 46, 104, 0.09);
+}
+
+
+.info-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 54px;
+  height: 54px;
+
+  margin-bottom: 20px;
+
+  border-radius: 14px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--treatment-navy),
+      var(--treatment-purple)
+    );
+}
+
+
+.info-card h2 {
+  margin: 0 0 22px;
+
+  color: var(--treatment-navy);
+
+  font-size: 27px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+
+.info-card-content {
+  font-size: 16px;
+}
+
+
+.info-card-content ul {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+
+.info-card-content li {
+  position: relative;
+
+  padding-left: 29px;
+
+  margin-bottom: 14px;
+
+  color: var(--treatment-text);
+
+  font-size: 16px;
+
+  line-height: 1.68;
+}
+
+
+.info-card-content li:last-child {
+  margin-bottom: 0;
+}
+
+
+.info-card-content li::before {
+  content: "\f058";
+
+  font-family: "Font Awesome 6 Free";
+
+  font-weight: 900;
+
+  position: absolute;
+
+  left: 0;
+  top: 1px;
+
+  color: var(--treatment-purple);
+}
+
+
+/* ============================================================
+   CENTER HEADING
+============================================================ */
+
+.section-heading-center {
+  max-width: 920px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+}
+
+
+.section-heading-center h2 {
+  margin: 0 0 16px;
+
+  color: var(--treatment-navy);
+
+  font-size: clamp(32px, 3.2vw, 44px);
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+
+.section-heading-center p {
+  margin: 0 auto;
+
+  color: var(--treatment-muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ============================================================
+   RECOVERY
+============================================================ */
+
+.recovery-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+.recovery-card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 28px;
+
+  border: 1px solid var(--treatment-border);
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.recovery-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(18, 46, 104, 0.08);
+}
+
+
+.recovery-card-icon {
+  flex: 0 0 52px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  color: var(--treatment-purple);
+
+  background: #f2eafa;
+
+  font-size: 21px;
+}
+
+
+.recovery-card h3 {
+  margin: 0 0 8px;
+
+  color: var(--treatment-navy);
+
+  font-size: 19px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+}
+
+
+.recovery-card p {
+  margin: 0;
+
+  color: var(--treatment-text);
+
+  font-size: 15.5px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   FAQ
+============================================================ */
+
+.treatment-faq-section {
+  background: #ffffff;
+
+  padding-top: 72px;
+  padding-bottom: 90px;
+}
+
+
+.treatment-faq-list {
+  max-width: 1120px;
+
+  margin: 0 auto;
+}
+
+
+.treatment-faq-item {
+  margin-bottom: 14px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--treatment-border);
+
+  border-radius: 13px;
+
+  background: #f2f3f7;
+}
+
+
+.treatment-faq-question {
+  width: 100%;
+
+  border: 0;
+
+  background: transparent;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 21px 24px;
+
+  color: var(--treatment-navy);
+
+  text-align: left;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+.treatment-faq-question i {
+  flex: 0 0 auto;
+
+  color: var(--treatment-purple);
+
+  font-size: 15px;
+}
+
+
+.treatment-faq-answer {
+  display: none;
+
+  padding:
+    0
+    24px
+    22px;
+}
+
+
+.treatment-faq-answer p {
+  margin: 0;
+
+  color: var(--treatment-text);
+
+  font-size: 15.5px;
+
+  line-height: 1.8;
+}
+
+
+.treatment-faq-item.active {
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 25px
+    rgba(18, 46, 104, 0.07);
+}
+
+
+.treatment-faq-item.active
+.treatment-faq-answer {
+  display: block;
+}
+
+
+/* ============================================================
+   TABLET
+   <= 991px
+============================================================ */
+
+@media (max-width: 991px) {
+
+  .treatment-container {
+    width: min(92%, 900px);
+  }
+
+
+  .treatment-breadcrumb {
+    padding: 50px 0 54px;
+  }
+
+
+  .breadcrumb-inner h1 {
+    font-size: 44px;
+  }
+
+
+  .breadcrumb-inner > p {
+    font-size: 17px;
+  }
+
+
+  .treatment-intro {
+    padding: 58px 0 30px;
+  }
+
+
+  .treatment-intro h2 {
+    font-size: 40px;
+  }
+
+
+  .treatment-intro p {
+    font-size: 17px;
+  }
+
+
+  .treatment-section {
+    padding: 62px 0;
+  }
+
+
+  .treatment-row,
+  .treatment-row-reverse {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+
+  /*
+    About:
+    content first, image second
+  */
+
+  .treatment-row
+  .treatment-content {
+    order: 1;
+  }
+
+
+  .treatment-row
+  .treatment-image-wrap {
+    order: 2;
+  }
+
+
+  /*
+    Procedure:
+    image first, content second
+  */
+
+  .treatment-row-reverse
+  .treatment-image-wrap {
+    order: 1;
+  }
+
+
+  .treatment-row-reverse
+  .treatment-content {
+    order: 2;
+  }
+
+
+  .treatment-image {
+    height: 430px;
+  }
+
+
+  .two-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .recovery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   <= 767px
+============================================================ */
+
+@media (max-width: 767px) {
+
+  .treatment-container {
+    width: 90%;
+  }
+
+
+  .treatment-breadcrumb {
+    padding: 42px 0 44px;
+  }
+
+
+  .breadcrumb-links {
+    gap: 8px;
+
+    margin-bottom: 16px;
+
+    font-size: 14px;
+  }
+
+
+  .breadcrumb-inner h1 {
+    margin-bottom: 13px;
+
+    font-size: 35px;
+  }
+
+
+  .breadcrumb-inner > p {
+    font-size: 15.5px;
+
+    line-height: 1.65;
+  }
+
+
+  .treatment-intro {
+    padding: 50px 0 26px;
+  }
+
+
+  .section-label {
+    margin-bottom: 12px;
+
+    font-size: 13px;
+
+    letter-spacing: 1.2px;
+  }
+
+
+  .treatment-intro h2 {
+    margin-bottom: 17px;
+
+    font-size: 32px;
+
+    line-height: 1.22;
+  }
+
+
+  .treatment-intro p {
+    font-size: 16px;
+
+    line-height: 1.72;
+  }
+
+
+  .treatment-section {
+    padding: 50px 0;
+  }
+
+
+  .treatment-row,
+  .treatment-row-reverse {
+    gap: 30px;
+  }
+
+
+  .treatment-content h2 {
+    margin-bottom: 18px;
+
+    font-size: 29px;
+
+    line-height: 1.25;
+  }
+
+
+  .treatment-rich-content,
+  .treatment-rich-content p {
+    font-size: 15.5px;
+
+    line-height: 1.75;
+  }
+
+
+  .content-subheading {
+    margin-top: 23px;
+
+    font-size: 20px;
+  }
+
+
+  .treatment-rich-content li,
+  .treatment-check-list li {
+    padding-left: 27px;
+
+    font-size: 15.5px;
+  }
+
+
+  .treatment-image {
+    height: 320px;
+
+    border-radius: 16px;
+  }
+
+
+  .info-card {
+    padding: 27px 23px;
+
+    border-radius: 16px;
+  }
+
+
+  .info-card h2 {
+    font-size: 24px;
+  }
+
+
+  .info-card-content li {
+    font-size: 15.5px;
+  }
+
+
+  .section-heading-center {
+    margin-bottom: 30px;
+  }
+
+
+  .section-heading-center h2 {
+    font-size: 29px;
+  }
+
+
+  .section-heading-center p {
+    font-size: 15.5px;
+  }
+
+
+  .recovery-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .recovery-card {
+    padding: 22px;
+
+    gap: 15px;
+  }
+
+
+  .recovery-card h3 {
+    font-size: 18px;
+  }
+
+
+  .recovery-card p {
+    font-size: 15px;
+  }
+
+
+  .treatment-faq-question {
+    padding: 18px;
+
+    font-size: 15px;
+  }
+
+
+  .treatment-faq-answer {
+    padding:
+      0
+      18px
+      18px;
+  }
+
+
+  .treatment-faq-answer p {
+    font-size: 15px;
+  }
+
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 480px) {
+
+  .breadcrumb-inner h1 {
+    font-size: 31px;
+  }
+
+
+  .treatment-intro h2 {
+    font-size: 29px;
+  }
+
+
+  .treatment-content h2 {
+    font-size: 27px;
+  }
+
+
+  .treatment-image {
+    height: 270px;
+  }
+
+
+  .recovery-card {
+    align-items: flex-start;
+  }
+
+
+  .recovery-card-icon {
+    flex-basis: 46px;
+
+    width: 46px;
+    height: 46px;
+  }
+
+}
+
+
+

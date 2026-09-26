@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Gallery | Dr. Deepak Koppaka
+  </title>
+
+
+  <!-- FAVICON -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/images/logo.png"
+  >
+
+
+  <!-- FONT AWESOME -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+
+  <!-- COMMON CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/common.css"
+  >
+
+
+  <!-- HEADER / FOOTER -->
+
+  <link
+    rel="stylesheet"
+    href="css/header-footer.css"
+  >
+
+
+  <!-- GALLERY -->
+
+  <link
+    rel="stylesheet"
+    href="css/gallery.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="shared-header"></header>
+
+
+
+  <main>
+
+
+    <!-- =====================================================
+         BREADCRUMB
+    ====================================================== -->
+
+    <section class="gallery-breadcrumb">
+
+      <div class="gallery-container">
+
+        <div class="gallery-breadcrumb-links">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <i class="fa-solid fa-chevron-right"></i>
+
+          <span>
+            Gallery
+          </span>
+
+        </div>
+
+
+        <h1>
+          Gallery
+        </h1>
+
+
+        <p>
+          Explore moments from medical conferences,
+          educational programmes, cancer awareness
+          initiatives and informative sessions by
+          Dr. Deepak Koppaka.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GALLERY INTRO
+    ====================================================== -->
+
+    <section class="gallery-main-section">
+
+      <div class="gallery-container">
+
+
+        <div class="gallery-heading">
+
+          <span class="gallery-section-label">
+            MEDIA GALLERY
+          </span>
+
+
+          <h2>
+            Photos &
+            <span>Videos</span>
+          </h2>
+
+
+          <p>
+            Explore photographs and informative video
+            sessions related to oncology care, medical
+            education and cancer awareness.
+          </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TABS
+        ================================================== -->
+
+        <div class="gallery-tabs">
+
+          <button
+            type="button"
+            class="gallery-tab active"
+            data-tab="photos"
+          >
+
+            <i class="fa-regular fa-images"></i>
+
+            Photos
+
+          </button>
+
+
+          <button
+            type="button"
+            class="gallery-tab"
+            data-tab="videos"
+          >
+
+            <i class="fa-brands fa-youtube"></i>
+
+            Videos
+
+          </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PHOTOS
+
+             JS automatic ga cards insert chestundi.
+        ================================================== -->
+
+        <div
+          class="gallery-tab-content active"
+          id="photosContent"
+        >
+
+          <div
+            class="photo-gallery-grid"
+            id="galleryPhotoGrid"
+          ></div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             VIDEOS
+
+             JS automatic ga YouTube cards insert chestundi.
+        ================================================== -->
+
+        <div
+          class="gallery-tab-content"
+          id="videosContent"
+        >
+
+          <div
+            class="video-gallery-grid"
+            id="galleryVideoGrid"
+          ></div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =====================================================
+       PHOTO MODAL
+  ====================================================== -->
+
+  <div
+    class="gallery-modal photo-modal"
+    id="photoModal"
+    aria-hidden="true"
+  >
+
+    <div class="gallery-modal-backdrop photo-modal-backdrop"></div>
+
+
+    <div class="gallery-photo-modal-box">
+
+      <button
+        type="button"
+        class="gallery-modal-close photo-modal-close"
+        aria-label="Close photo"
+      >
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+
+      <img
+        id="modalPhoto"
+        src=""
+        alt=""
+      >
+
+
+      <h3 id="modalPhotoTitle"></h3>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       VIDEO MODAL
+  ====================================================== -->
+
+  <div
+    class="gallery-modal video-modal"
+    id="videoModal"
+    aria-hidden="true"
+  >
+
+    <div class="gallery-modal-backdrop video-modal-backdrop"></div>
+
+
+    <div class="gallery-video-modal-box">
+
+      <button
+        type="button"
+        class="gallery-modal-close video-modal-close"
+        aria-label="Close video"
+      >
+
+        <i class="fa-solid fa-xmark"></i>
+
+      </button>
+
+
+      <div class="gallery-video-frame">
+
+        <iframe
+          id="galleryVideoFrame"
+          src=""
+          title="YouTube video"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share
+          "
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="shared-footer"></footer>
+
+
+
+  <!-- =====================================================
+       JS
+
+       ORDER IMPORTANT
+  ====================================================== -->
+
+  <script src="js/shared.js"></script>
+
+  <!-- COMMON GALLERY DATA -->
+
+  <script src="js/gallery-data.js"></script>
+
+  <!-- GALLERY PAGE -->
+
+  <script src="js/gallery.js"></script>
+
+
+</body>
+
+</html>

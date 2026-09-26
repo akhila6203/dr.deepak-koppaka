@@ -1,0 +1,824 @@
+/* ============================================================
+   DR. DEEPAK KOPPAKA
+   TREATMENTS LISTING PAGE
+============================================================ */
+
+:root {
+  --treatment-navy: #122e68;
+  --treatment-blue: #0d477d;
+  --treatment-purple: #7b2fa1;
+  --treatment-purple-dark: #632284;
+
+  --treatment-text: #39475d;
+  --treatment-muted: #68758a;
+
+  --treatment-light: #f7f8fc;
+  --treatment-card: #f0f2f7;
+
+  --treatment-border: #e1e5ed;
+
+  --white: #ffffff;
+}
+
+
+/* ============================================================
+   BASIC
+============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background: #ffffff;
+
+  color: var(--treatment-text);
+}
+
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+
+.treatment-container {
+  width: min(92%, 1440px);
+
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   BREADCRUMB
+   SAME DESIGN AS TREATMENT DETAILS PAGE
+============================================================ */
+
+.treatment-breadcrumb-section {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+
+  background:
+    linear-gradient(
+      110deg,
+      #084c75 0%,
+      #185f91 46%,
+      #543a88 100%
+    );
+
+  padding: 38px 0 40px;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* ============================================================
+   BREADCRUMB INNER
+============================================================ */
+
+.treatment-breadcrumb-section
+.treatment-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(92%, 1440px);
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   HOME > TREATMENTS
+============================================================ */
+
+.treatments-breadcrumb-links {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  width: 100%;
+
+  margin: 0 0 22px;
+
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+.treatments-breadcrumb-links a,
+.treatments-breadcrumb-links span {
+  display: inline-block;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.treatments-breadcrumb-links a {
+  transition:
+    opacity 0.25s ease;
+}
+
+
+.treatments-breadcrumb-links a:hover {
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+
+
+.treatments-breadcrumb-links i {
+  display: inline-block;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  opacity: 0.8;
+}
+
+
+/* ============================================================
+   BREADCRUMB HEADING
+============================================================ */
+
+.treatment-breadcrumb-section
+.treatment-container > h1 {
+  display: block;
+
+  width: 100%;
+
+  margin: 0 0 18px;
+
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 5vw, 62px);
+
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   BREADCRUMB DESCRIPTION
+============================================================ */
+
+.treatment-breadcrumb-section
+.treatment-container > p {
+  display: block;
+
+  width: 100%;
+
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 0;
+
+  color:
+    rgba(255, 255, 255, 0.92);
+
+  font-size: 18px;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   INTRO
+============================================================ */
+
+.treatments-main-intro {
+  padding: 72px 0 42px;
+
+  background: #ffffff;
+}
+
+
+.treatments-main-intro-content {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   SECTION LABEL
+============================================================ */
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: var(--treatment-purple);
+
+  font-size: 16px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+
+  text-transform: uppercase;
+}
+
+
+/* ============================================================
+   INTRO HEADING
+============================================================ */
+
+.treatments-main-intro-content h2 {
+  max-width: 1150px;
+
+  margin: 0 auto 22px;
+
+  color: var(--treatment-navy);
+
+  font-size:
+    clamp(38px, 4.2vw, 58px);
+
+  line-height: 1.17;
+
+  font-weight: 800;
+}
+
+
+.treatments-main-intro-content h2 span {
+  color: var(--treatment-purple);
+}
+
+
+/* ============================================================
+   INTRO DESCRIPTION
+============================================================ */
+
+.treatments-main-intro-content p {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  color: var(--treatment-muted);
+
+  font-size: 19px;
+
+  line-height: 1.8;
+}
+
+
+/* ============================================================
+   TREATMENTS CARD SECTION
+============================================================ */
+
+.treatments-card-section {
+  padding: 30px 0 90px;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   CARD GRID
+============================================================ */
+
+.treatments-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+
+  align-items: stretch;
+}
+
+
+/* ============================================================
+   CARD
+============================================================ */
+
+.treatments-card {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border:
+    1px solid var(--treatment-border);
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 32px
+    rgba(18, 46, 104, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.treatments-card:hover {
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(123, 47, 161, 0.22);
+
+  box-shadow:
+    0 18px 42px
+    rgba(18, 46, 104, 0.13);
+}
+
+
+/* ============================================================
+   CARD IMAGE
+============================================================ */
+
+.treatments-card-image {
+  display: block;
+
+  width: 100%;
+
+  height: 260px;
+
+  overflow: hidden;
+
+  background:
+    #f0f2f7;
+
+  text-decoration: none;
+}
+
+
+.treatments-card-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.treatments-card:hover
+.treatments-card-image img {
+  transform:
+    scale(1.04);
+}
+
+
+/* ============================================================
+   CARD BODY
+============================================================ */
+
+.treatments-card-body {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 28px;
+}
+
+
+/* ============================================================
+   CARD HEADING
+============================================================ */
+
+.treatments-card-body h3 {
+  margin: 0 0 14px;
+
+  color: var(--treatment-navy);
+
+  font-size: 23px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+.treatments-card:hover
+.treatments-card-body h3 {
+  color:
+    var(--treatment-purple);
+}
+
+
+/* ============================================================
+   CARD DESCRIPTION
+============================================================ */
+
+.treatments-card-body p {
+  margin: 0 0 22px;
+
+  color:
+    var(--treatment-text);
+
+  font-size: 16px;
+
+  line-height: 1.75;
+}
+
+
+/* ============================================================
+   READ MORE
+============================================================ */
+
+.treatment-read-more {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  margin-top: auto;
+
+  color:
+    var(--treatment-purple);
+
+  font-size: 16px;
+
+  line-height: 1.4;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+
+.treatment-read-more i {
+  font-size: 13px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.treatment-read-more:hover {
+  color:
+    var(--treatment-purple-dark);
+
+  gap: 13px;
+}
+
+
+.treatment-read-more:hover i {
+  transform:
+    translateX(3px);
+}
+
+
+/* ============================================================
+   TABLET
+   <= 991px
+============================================================ */
+
+@media (max-width: 991px) {
+
+  .treatment-container {
+    width:
+      min(92%, 900px);
+  }
+
+
+  /* Same as details page */
+
+  .treatment-breadcrumb-section {
+    padding:
+      50px 0 54px;
+  }
+
+
+  .treatment-breadcrumb-section
+  .treatment-container > h1 {
+    font-size: 44px;
+  }
+
+
+  .treatment-breadcrumb-section
+  .treatment-container > p {
+    font-size: 17px;
+  }
+
+
+  /* Intro */
+
+  .treatments-main-intro {
+    padding:
+      58px 0 30px;
+  }
+
+
+  .treatments-main-intro-content h2 {
+    font-size: 40px;
+  }
+
+
+  .treatments-main-intro-content p {
+    font-size: 17px;
+  }
+
+
+  /* Cards */
+
+  .treatments-card-section {
+    padding:
+      25px 0 72px;
+  }
+
+
+  .treatments-card-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+    gap: 24px;
+  }
+
+
+  .treatments-card-image {
+    height: 240px;
+  }
+
+
+  .treatments-card-body {
+    padding: 25px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   <= 767px
+============================================================ */
+
+@media (max-width: 767px) {
+
+  .treatment-container {
+    width: 90%;
+  }
+
+
+  /* Same breadcrumb spacing as details */
+
+  .treatment-breadcrumb-section {
+    padding:
+      42px 0 44px;
+  }
+
+
+  .treatments-breadcrumb-links {
+    gap: 8px;
+
+    margin-bottom: 16px;
+
+    font-size: 14px;
+  }
+
+
+  .treatments-breadcrumb-links a,
+  .treatments-breadcrumb-links span {
+    font-size: 14px;
+  }
+
+
+  .treatment-breadcrumb-section
+  .treatment-container > h1 {
+    margin-bottom: 13px;
+
+    font-size: 35px;
+  }
+
+
+  .treatment-breadcrumb-section
+  .treatment-container > p {
+    font-size: 15.5px;
+
+    line-height: 1.65;
+  }
+
+
+  /* Intro */
+
+  .treatments-main-intro {
+    padding:
+      50px 0 26px;
+  }
+
+
+  .section-label {
+    margin-bottom: 12px;
+
+    font-size: 13px;
+
+    letter-spacing: 1.2px;
+  }
+
+
+  .treatments-main-intro-content h2 {
+    margin-bottom: 17px;
+
+    font-size: 32px;
+
+    line-height: 1.22;
+  }
+
+
+  .treatments-main-intro-content p {
+    font-size: 16px;
+
+    line-height: 1.72;
+  }
+
+
+  /* Cards */
+
+  .treatments-card-section {
+    padding:
+      18px 0 58px;
+  }
+
+
+  .treatments-card-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  .treatments-card {
+    border-radius: 16px;
+  }
+
+
+  .treatments-card-image {
+    height: 230px;
+  }
+
+
+  .treatments-card-body {
+    padding:
+      23px 21px;
+  }
+
+
+  .treatments-card-body h3 {
+    font-size: 21px;
+  }
+
+
+  .treatments-card-body p {
+    font-size: 15.5px;
+
+    line-height: 1.7;
+  }
+
+
+  .treatment-read-more {
+    font-size: 15px;
+  }
+
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 480px) {
+
+  .treatment-breadcrumb-section
+  .treatment-container > h1 {
+    font-size: 31px;
+  }
+
+
+  .treatments-main-intro-content h2 {
+    font-size: 29px;
+  }
+
+
+  .treatments-card-image {
+    height: 210px;
+  }
+
+
+  .treatments-card-body {
+    padding:
+      21px 19px;
+  }
+
+
+  .treatments-card-body h3 {
+    font-size: 19px;
+  }
+
+
+  .treatments-card-body p {
+    font-size: 15px;
+  }
+
+}
+
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .treatments-card,
+  .treatments-card-image img,
+  .treatment-read-more,
+  .treatment-read-more i {
+    transition: none;
+  }
+
+
+  .treatments-card:hover {
+    transform: none;
+  }
+
+
+  .treatments-card:hover
+  .treatments-card-image img {
+    transform: none;
+  }
+
+}

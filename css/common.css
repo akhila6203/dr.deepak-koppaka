@@ -1,0 +1,261 @@
+@import url(
+  'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap'
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  color: #30343b;
+
+  background: #ffffff;
+
+  font-family:
+    "DM Sans",
+    Arial,
+    sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #073e69;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  line-height: 1.25;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* ========================================
+   INNER PAGE BANNER
+======================================== */
+
+.inner-banner {
+  position: relative;
+
+  min-height: 310px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 57, 96, .95) 0%,
+      rgba(5, 71, 120, .83) 42%,
+      rgba(82, 55, 120, .52) 100%
+    ),
+    url("../assets/images/inner-banner.jpg")
+    center / cover no-repeat;
+}
+
+.inner-banner::before {
+  content: "";
+
+  position: absolute;
+
+  right: -100px;
+  top: -160px;
+
+  width: 450px;
+  height: 450px;
+
+  border: 80px solid rgba(255,255,255,.05);
+
+  border-radius: 50%;
+}
+
+.inner-banner-content {
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+}
+
+.inner-banner h1 {
+  margin-bottom: 15px;
+
+  color: white;
+
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 800;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 17px;
+}
+
+.breadcrumb a {
+  color: #d6c6e8;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  color: white;
+}
+
+
+/* ========================================
+   PAGE CONTENT
+======================================== */
+
+.page-section {
+  padding: 85px 0;
+}
+
+.section-heading {
+  max-width: 780px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #533779;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin-bottom: 16px;
+
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.section-heading p {
+  color: #6b7280;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.content-card {
+  padding: 40px;
+
+  background: white;
+
+  border: 1px solid #e7e9ed;
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 35px rgba(18, 55, 84, .07);
+}
+
+.content-card h2 {
+  margin-bottom: 18px;
+
+  font-size: 32px;
+}
+
+.content-card p {
+  margin-bottom: 17px;
+
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 991px) {
+
+  .inner-banner {
+    min-height: 260px;
+  }
+
+  .page-section {
+    padding: 65px 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .inner-banner {
+    min-height: 220px;
+  }
+
+  .inner-banner h1 {
+    font-size: 36px;
+  }
+
+  .breadcrumb {
+    font-size: 15px;
+  }
+
+  .page-section {
+    padding: 50px 0;
+  }
+
+  .content-card {
+    padding: 28px 22px;
+  }
+
+  .content-card h2 {
+    font-size: 27px;
+  }
+
+  .content-card p {
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,1464 @@
+/* ==========================================================
+   DR. DEEPAK KOPPAKA
+   CONTACT + APPOINTMENT
+========================================================== */
+
+
+:root {
+
+  --dk-blue: #064d80;
+
+  --dk-dark-blue: #063d69;
+
+  --dk-purple: #54357b;
+
+  --dk-dark-purple: #3d285e;
+
+  --dk-heading: #17263a;
+
+  --dk-text: #5f6979;
+
+  --dk-light: #f7f9fb;
+
+  --dk-light-purple: #f7f3fa;
+
+  --dk-white: #ffffff;
+
+  --dk-border: #e0e5ea;
+
+}
+
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+.contact-page-container {
+
+  width: calc(100% - 100px);
+
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   BREADCRUMB BANNER
+========================================================== */
+
+.inner-page-banner {
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 52px 0 55px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      115deg,
+      var(--dk-dark-blue) 0%,
+      var(--dk-blue) 50%,
+      var(--dk-purple) 100%
+    );
+
+}
+
+.inner-page-banner
+.contact-page-container {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+.breadcrumb {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+}
+
+
+.breadcrumb a {
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+}
+
+
+.breadcrumb a:hover {
+
+  color: #ddd0ef;
+
+}
+
+
+.breadcrumb i {
+
+  color: #cbb7df;
+
+  font-size: 10px;
+
+}
+
+
+.breadcrumb span {
+
+  color: #e8def1;
+
+}
+
+
+.inner-page-banner h1 {
+
+  margin: 0 0 12px;
+
+  color: #ffffff;
+
+  font-size: clamp(40px, 4vw, 55px);
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+}
+
+
+.inner-page-banner p {
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  color: rgba(255,255,255,0.92);
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   COMMON TITLES
+========================================================== */
+
+.section-tag {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 12px;
+
+  color: var(--dk-purple);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+
+.section-tag i {
+
+  color: var(--dk-blue);
+
+}
+
+
+.contact-section-title,
+.form-main-title {
+
+  margin: 0;
+
+  color: var(--dk-heading);
+
+  font-size: clamp(34px, 3vw, 47px);
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+}
+
+
+.contact-section-title span,
+.form-main-title span {
+
+  color: var(--dk-purple);
+
+}
+
+
+.contact-intro,
+.form-description {
+
+  margin: 15px 0 28px;
+
+  color: var(--dk-text);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
+
+.contact-main-section {
+
+  padding: 80px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fafcfd,
+      #f6f7fa
+    );
+
+}
+
+
+.contact-main-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(0, 1.15fr);
+
+  gap: 70px;
+
+  align-items: start;
+
+}
+
+
+.contact-details-side {
+
+  padding: 18px 0;
+
+}
+
+
+/* ==========================================================
+   CONTACT INFO BOX
+========================================================== */
+
+.contact-info-box {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 16px;
+
+  padding: 19px 21px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(6,77,128,0.11);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(20,45,70,0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+}
+
+
+.contact-info-box:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px
+    rgba(20,45,70,0.11);
+
+}
+
+
+.contact-info-icon {
+
+  width: 52px;
+
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dk-blue),
+      var(--dk-purple)
+    );
+
+  box-shadow:
+    0 8px 18px
+    rgba(83,53,123,0.20);
+
+}
+
+
+.contact-info-content {
+
+  min-width: 0;
+
+}
+
+
+.info-label {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--dk-purple);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+}
+
+
+.contact-info-content a {
+
+  display: inline-block;
+
+  color: var(--dk-heading);
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  overflow-wrap: anywhere;
+
+}
+
+
+.contact-info-content p {
+
+  margin: 5px 0 0;
+
+  color: var(--dk-text);
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+}
+
+
+.contact-info-content
+.address-text {
+
+  margin: 0;
+
+  color: var(--dk-heading);
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   SOCIAL
+========================================================== */
+
+.contact-follow {
+
+  margin-top: 30px;
+
+}
+
+
+.contact-follow h3 {
+
+  margin: 0 0 14px;
+
+  color: var(--dk-heading);
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+}
+
+
+.contact-social-icons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+
+.contact-social-icons a {
+
+  width: 43px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: var(--dk-blue);
+
+  background: #ffffff;
+
+  border: 1px solid rgba(6,77,128,0.18);
+
+  border-radius: 50%;
+
+  font-size: 16px;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+
+}
+
+
+.contact-social-icons a:hover {
+
+  color: #ffffff;
+
+  border-color: transparent;
+
+  transform: translateY(-3px);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dk-blue),
+      var(--dk-purple)
+    );
+
+}
+
+
+/* ==========================================================
+   FORM CARD
+========================================================== */
+
+.medical-form-card {
+
+  padding: 37px 39px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(6,77,128,0.10);
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 18px 45px
+    rgba(20,49,75,0.09);
+
+}
+
+
+/* ==========================================================
+   FORM ROW
+========================================================== */
+
+.form-row {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0,1fr));
+
+  gap: 20px;
+
+}
+
+
+.form-group {
+
+  width: 100%;
+
+  margin-bottom: 19px;
+
+}
+
+
+.form-group label {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--dk-heading);
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+  width: 100%;
+
+  color: var(--dk-heading);
+
+  background: #fbfcfd;
+
+  border: 1px solid #d8dfe5;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+}
+
+
+.form-group input,
+.form-group select {
+
+  height: 53px;
+
+  padding: 0 15px;
+
+}
+
+
+.form-group textarea {
+
+  min-height: 135px;
+
+  padding: 14px 15px;
+
+  line-height: 1.6;
+
+  resize: vertical;
+
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+  color: #929aa6;
+
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+  background: #ffffff;
+
+  border-color: var(--dk-purple);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(83,53,123,0.08);
+
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.medical-submit-btn {
+
+  min-height: 52px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 0 27px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      120deg,
+      var(--dk-blue),
+      var(--dk-purple)
+    );
+
+  border: 0;
+
+  border-radius: 28px;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 23px
+    rgba(50,55,112,0.20);
+
+  transition: all 0.25s ease;
+
+}
+
+
+.medical-submit-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 28px
+    rgba(50,55,112,0.27);
+
+}
+
+
+.medical-submit-btn:disabled {
+
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+}
+
+
+/* ==========================================================
+   FORM STATUS
+========================================================== */
+
+.form-status {
+
+  display: none;
+
+  margin-top: 17px;
+
+  padding: 13px 15px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.6;
+
+}
+
+
+.form-status.success {
+
+  display: block;
+
+  color: #166534;
+
+  background: #ecfdf3;
+
+  border: 1px solid #bbf7d0;
+
+}
+
+
+.form-status.error {
+
+  display: block;
+
+  color: #991b1b;
+
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+
+}
+
+
+/* ==========================================================
+   LOCATION
+========================================================== */
+
+.location-section {
+
+  padding: 75px 0 85px;
+
+  background: #ffffff;
+
+}
+
+
+.location-heading {
+
+  max-width: 720px;
+
+  margin: 0 auto 35px;
+
+  text-align: center;
+
+}
+
+
+.center-tag {
+
+  justify-content: center;
+
+}
+
+
+.location-heading p {
+
+  margin: 14px auto 0;
+
+  color: var(--dk-text);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+}
+
+
+.map-container {
+
+  width: 100%;
+
+  height: 440px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(6,77,128,0.11);
+
+  border-radius: 17px;
+
+  background: #eef2f5;
+
+  box-shadow:
+    0 14px 38px
+    rgba(20,49,75,0.09);
+
+}
+
+
+.map-container iframe {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border: 0;
+
+}
+
+
+/* ==========================================================
+   APPOINTMENT SECTION
+========================================================== */
+
+.appointment-main-section {
+
+  padding: 80px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fafcfd,
+      #f5f3f8
+    );
+
+}
+
+
+.appointment-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px,34fr)
+    minmax(0,66fr);
+
+  gap: 38px;
+
+  align-items: stretch;
+
+}
+
+
+/* ==========================================================
+   DOCTOR CARD
+========================================================== */
+
+.appointment-doctor-card {
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(6,77,128,0.10);
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 18px 45px
+    rgba(20,49,75,0.09);
+
+}
+
+
+.appointment-doctor-image {
+
+  width: 100%;
+
+  height: 480px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef5f9,
+      #f3edf7
+    );
+
+}
+
+
+.appointment-doctor-image img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+}
+
+
+.appointment-doctor-content {
+
+  padding: 28px 29px 31px;
+
+}
+
+
+.doctor-card-label {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--dk-purple);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+
+}
+
+
+.appointment-doctor-content h2 {
+
+  margin: 0 0 7px;
+
+  color: var(--dk-heading);
+
+  font-size: 29px;
+
+  line-height: 1.25;
+
+}
+
+
+.appointment-doctor-content h3 {
+
+  margin: 0 0 14px;
+
+  color: var(--dk-blue);
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+}
+
+
+.appointment-doctor-content p {
+
+  margin: 0;
+
+  color: var(--dk-text);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+}
+
+
+.doctor-card-divider {
+
+  height: 1px;
+
+  margin: 22px 0;
+
+  background: #e5e8ec;
+
+}
+
+
+.doctor-card-point {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+
+  color: var(--dk-heading);
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+}
+
+
+.doctor-card-point i {
+
+  width: 25px;
+
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--dk-blue),
+      var(--dk-purple)
+    );
+
+  border-radius: 50%;
+
+  font-size: 10px;
+
+}
+
+
+.appointment-form-card {
+
+  height: 100%;
+
+}
+
+
+/* ==========================================================
+   LARGE TABLET
+========================================================== */
+
+@media (max-width: 1200px) {
+
+  .contact-page-container {
+
+    width: calc(100% - 60px);
+
+  }
+
+
+  .contact-main-grid {
+
+    gap: 40px;
+
+  }
+
+
+  .medical-form-card {
+
+    padding: 32px 30px;
+
+  }
+
+
+  .appointment-grid {
+
+    grid-template-columns:
+      minmax(280px,38fr)
+      minmax(0,62fr);
+
+    gap: 28px;
+
+  }
+
+
+  .appointment-doctor-image {
+
+    height: 440px;
+
+  }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .inner-page-banner {
+
+    padding: 45px 0 48px;
+
+  }
+
+
+  .contact-main-section,
+  .appointment-main-section {
+
+    padding: 60px 0;
+
+  }
+
+
+  /* Contact becomes vertical */
+
+  .contact-main-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+  }
+
+
+  /*
+    IMPORTANT:
+    Contact/appointment form fields remain
+    side by side on tablet.
+  */
+
+  .form-row {
+
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+
+  }
+
+
+  .appointment-grid {
+
+    grid-template-columns:
+      minmax(250px,38fr)
+      minmax(0,62fr);
+
+    gap: 24px;
+
+  }
+
+
+  .appointment-doctor-image {
+
+    height: 390px;
+
+  }
+
+
+  .appointment-doctor-content {
+
+    padding: 23px 21px 26px;
+
+  }
+
+
+  .appointment-doctor-content h2 {
+
+    font-size: 25px;
+
+  }
+
+
+  .map-container {
+
+    height: 380px;
+
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .contact-page-container {
+
+    width: calc(100% - 32px);
+
+  }
+
+
+  .inner-page-banner {
+
+    padding: 38px 0 41px;
+
+  }
+
+
+  .breadcrumb {
+
+    font-size: 14px;
+
+  }
+
+
+  .inner-page-banner h1 {
+
+    font-size: 35px;
+
+  }
+
+
+  .inner-page-banner p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+  }
+
+
+  .contact-main-section,
+  .appointment-main-section {
+
+    padding: 48px 0;
+
+  }
+
+
+  .contact-section-title,
+  .form-main-title {
+
+    font-size: 32px;
+
+  }
+
+
+  .contact-intro,
+  .form-description {
+
+    font-size: 15px;
+
+  }
+
+
+  /* MOBILE FORM SINGLE COLUMN */
+
+  .form-row {
+
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+  }
+
+
+  .medical-form-card {
+
+    padding: 27px 20px;
+
+    border-radius: 14px;
+
+  }
+
+
+  .form-group label {
+
+    font-size: 14px;
+
+  }
+
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+
+    font-size: 15px;
+
+  }
+
+
+  .contact-info-box {
+
+    padding: 17px 16px;
+
+    gap: 14px;
+
+  }
+
+
+  .contact-info-icon {
+
+    width: 47px;
+
+    height: 47px;
+
+    flex-basis: 47px;
+
+  }
+
+
+  /* APPOINTMENT MOBILE */
+
+  .appointment-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+  }
+
+
+  .appointment-doctor-image {
+
+    height: 470px;
+
+  }
+
+
+  .map-container {
+
+    height: 330px;
+
+    border-radius: 13px;
+
+  }
+
+
+  .location-section {
+
+    padding: 55px 0;
+
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .contact-page-container {
+
+    width: calc(100% - 26px);
+
+  }
+
+
+  .inner-page-banner h1 {
+
+    font-size: 31px;
+
+  }
+
+
+  .inner-page-banner p {
+
+    font-size: 14px;
+
+  }
+
+
+  .section-tag {
+
+    font-size: 13px;
+
+  }
+
+
+  .contact-section-title,
+  .form-main-title {
+
+    font-size: 29px;
+
+  }
+
+
+  .contact-info-box {
+
+    align-items: flex-start;
+
+  }
+
+
+  .contact-info-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    flex-basis: 44px;
+
+    font-size: 15px;
+
+  }
+
+
+  .info-label {
+
+    font-size: 13px;
+
+  }
+
+
+  .contact-info-content a {
+
+    font-size: 15px;
+
+  }
+
+
+  .contact-info-content p {
+
+    font-size: 14px;
+
+  }
+
+
+  .appointment-doctor-image {
+
+    height: 400px;
+
+  }
+
+
+  .appointment-doctor-content {
+
+    padding: 23px 20px 26px;
+
+  }
+
+
+  .appointment-doctor-content h2 {
+
+    font-size: 26px;
+
+  }
+
+
+  .medical-submit-btn {
+
+    width: 100%;
+
+  }
+
+
+  .map-container {
+
+    height: 290px;
+
+  }
+
+}
