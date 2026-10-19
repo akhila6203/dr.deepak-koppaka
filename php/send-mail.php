@@ -514,6 +514,26 @@ elseif (
             $_POST['service'] ?? ''
         );
 
+        $otherService =
+    cleanValue(
+        $_POST['other_service'] ?? ''
+    );
+
+if ($service === 'Others') {
+
+    if (empty($otherService)) {
+        http_response_code(422);
+
+        echo json_encode([
+            'success' => false,
+            'message' => 'Please specify your treatment.'
+        ]);
+
+        exit;
+    }
+
+    $service = $otherService;
+}
 
 
     if (
@@ -749,7 +769,7 @@ elseif (
           <p>
 
             <strong>
-              Service:
+              Consultation Type / Treatment:
             </strong>
 
             '

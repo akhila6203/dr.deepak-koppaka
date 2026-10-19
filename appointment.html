@@ -242,8 +242,8 @@
 
             <h2 class="form-main-title">
 
-              Book Your
-
+              <!-- Book Your -->
+              Book an
               <span>
                 Appointment
               </span>
@@ -370,10 +370,98 @@
               <!-- ==================================
                    SERVICE
               =================================== -->
+              
+<!-- CONSULTATION TYPE -->
 
+<div class="form-group">
+
+  <label for="appointmentService">
+    Consultation Type
+  </label>
+
+  <select
+    id="appointmentService"
+    name="service"
+    required
+    onchange="toggleOtherService(this)"
+  >
+    <option value="">
+      Select Treatment
+    </option>
+
+    <option value="Chemotherapy">
+      Chemotherapy
+    </option>
+
+    <option value="Immunotherapy">
+      Immunotherapy
+    </option>
+
+    <option value="Targeted Therapy">
+      Targeted Therapy
+    </option>
+
+    <option value="Hormonal Therapy">
+      Hormonal Therapy
+    </option>
+
+    <option value="Precision Oncology">
+      Precision Oncology
+    </option>
+
+    <option value="Laparoscopic Cancer Surgery">
+      Laparoscopic Cancer Surgery
+    </option>
+
+    <option value="Robotic Cancer Surgery">
+      Robotic Cancer Surgery
+    </option>
+
+    <option value="HIPEC & PIPAC">
+      HIPEC &amp; PIPAC
+    </option>
+
+    <option value="Organ Preservation Cancer Surgery">
+      Organ Preservation Cancer Surgery
+    </option>
+
+    <option value="Sentinel Lymph Node Biopsy">
+      Sentinel Lymph Node Biopsy
+    </option>
+
+    <option value="Fluorescence-Guided Cancer Surgery">
+      Fluorescence-Guided Cancer Surgery
+    </option>
+
+    <option value="Others">
+      Others
+    </option>
+
+  </select>
+
+</div>
+
+<!-- OTHER TREATMENT -->
+
+<div
+  class="form-group"
+  id="otherServiceGroup"
+  style="display: none;"
+>
+  <label for="otherService">
+    Please Specify Treatment
+  </label>
+
+  <input
+    type="text"
+    id="otherService"
+    name="other_service"
+    placeholder="Enter treatment or consultation"
+  >
+</div>
+
+<!-- 
               <div class="form-group">
-
-
                 <label for="appointmentService">
                   Type Of Service
                 </label>
@@ -434,7 +522,7 @@
                 </select>
 
 
-              </div>
+              </div> -->
 
 
 
@@ -471,7 +559,7 @@
 
 
                 <span>
-                  Book Appointment
+                  Book an Appointment
                 </span>
 
 
@@ -522,6 +610,28 @@
   <script src="js/shared.js"></script>
 
   <script src="js/contact-appointment.js"></script>
+
+
+<script>
+  function toggleOtherService(select) {
+    const otherGroup =
+      document.getElementById("otherServiceGroup");
+
+    const otherInput =
+      document.getElementById("otherService");
+
+    const isOther = select.value === "Others";
+
+    otherGroup.style.display =
+      isOther ? "block" : "none";
+
+    otherInput.required = isOther;
+
+    if (!isOther) {
+      otherInput.value = "";
+    }
+  }
+</script>
 
 
 </body>
