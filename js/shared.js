@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-  const PHONE_DISPLAY = "+91 9XXXXXXXXX";
-  const PHONE_LINK = "+919XXXXXXXXX";
+  const PHONE_DISPLAY = "+91 8977789369";
+  const PHONE_LINK = "+918977789369";
 
-  const EMAIL = "info@drdeepakkoppaka.com";
-  const ADDRESS = "Hyderabad, Telangana, India";
+  const EMAIL = "info@drdeepakkoppakacancerspealist.com";
+  // const ADDRESS = "Door No.: # 1, 112/11, Kondapur, Hanuman Nagar, Raghavendra Colony, Kondapur, Serilingampalle (M), Hyderabad, Telangana 500084";
+const HEADER_ADDRESS = "Kondapur, Serilingampalle (M), Hyderabad, Telangana 500084";
 
+// FOOTER FULL ADDRESS
+const FOOTER_ADDRESS =
+  "Door No.: # 1, 112/11, Kondapur, Hanuman Nagar, Raghavendra Colony, Kondapur, Serilingampalle (M), Hyderabad, Telangana 500084";
 
   /* =====================================================
      HEADER
@@ -57,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               <i class="fa-solid fa-location-dot"></i>
 
-              <span>${ADDRESS}</span>
+              <span>${HEADER_ADDRESS}</span>
 
             </div>
 
@@ -568,7 +572,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <i class="fa-solid fa-location-dot"></i>
 
           <span>
-            ${ADDRESS}
+           ${FOOTER_ADDRESS}
           </span>
 
         </div>
@@ -833,7 +837,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </span>
 
               <p>
-                ${ADDRESS}
+                ${FOOTER_ADDRESS}
               </p>
 
             </div>
