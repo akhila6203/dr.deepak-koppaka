@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "assets/images/cancer/head-neck-surgery.jpg",
 
       whatHeading:
-        "What is Head and Neck Cancer?",
+        "What is head and neck cancer?",
 
       whatContent: `
         <p>
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       diagnosis: [
         "Physical examination",
         "Endoscopy",
-        "CT scan / MRI / PET scan",
+        "CT, MRI or PET scans",
         "Biopsy for confirmation and staging"
       ],
 
@@ -113,10 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
 
       whyHeading:
-        "Personalised Head & Neck Cancer Treatment",
+        "Personalised head and neck cancer treatment",
 
       whyIntro:
-        "Head and neck cancer treatment requires careful planning because treatment may affect speech, swallowing, appearance and other important functions. The treatment approach therefore focuses on cancer control together with preservation of important normal structures whenever clinically appropriate.",
+        "Head and neck cancer treatment requires careful planning because it may affect speech, swallowing, appearance and other important functions. The treatment approach therefore focuses on cancer control together with preservation of important normal structures whenever clinically appropriate.",
 
       why: [
         "Detailed evaluation of tumour location and disease extent",
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Advanced Thyroid Cancer Care with Precision & Expertise",
 
       intro:
-        "Thyroid cancer develops in the thyroid gland, which plays an important role in the body's metabolism. Many thyroid cancers grow slowly and can have favourable treatment outcomes when appropriately diagnosed and treated.",
+        "Thyroid cancer develops in the thyroid gland, which plays an important role in the body's metabolism. Many thyroid cancers grow slowly and may have favourable treatment outcomes when diagnosed and treated appropriately.",
 
       image:
         "assets/images/cancer/thyroid-detail.jpg",
@@ -489,13 +489,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     "esophageal-cancer": {
 
-      title: "Esophageal Cancer",
+      title: "Oesophageal Cancer",
 
       mainHeading:
-        "Advanced Esophageal Cancer Care with Precision & Expertise",
+        "Advanced Oesophageal Cancer Care with Precision & Expertise",
 
       intro:
-        "Esophageal cancer affects the food pipe that carries food from the mouth to the stomach. Early detection and appropriate treatment planning are important because the condition can affect swallowing and nutrition.",
+        "Oesophageal Cancer affects the food pipe that carries food from the mouth to the stomach. Early detection and appropriate treatment planning are important because the condition can affect swallowing and nutrition.",
 
       image:
         "assets/images/cancer/esophageal-detail.jpg",
@@ -504,11 +504,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "assets/images/cancer/esophageal-surgery.jpg",
 
       whatHeading:
-        "What is Esophageal Cancer?",
+        "What is Oesophageal Cancer?",
 
       whatContent: `
         <p>
-          Esophageal cancer develops when abnormal cells in the
+          Oesophageal Cancer develops when abnormal cells in the
           lining of the esophagus grow uncontrollably and form a
           tumour.
         </p>
@@ -569,7 +569,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       treatments: [
         {
-          title: "Esophageal Cancer Surgery",
+          title: "Oesophageal Cancer Surgery",
           text:
             "Selected patients may undergo removal of the affected portion of the esophagus with reconstruction.",
           icon: "fa-user-doctor"
@@ -583,7 +583,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           title: "Radiation Therapy",
           text:
-            "Radiation can form part of combined treatment for selected esophageal cancers.",
+            "Radiation can form part of combined treatment for selected Oesophageal Cancers.",
           icon: "fa-radiation"
         },
         {
@@ -595,10 +595,10 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
 
       whyHeading:
-        "Personalised Esophageal Cancer Treatment",
+        "Personalised Oesophageal Cancer Treatment",
 
       whyIntro:
-        "Esophageal cancer can require complex multimodality treatment. Careful staging helps determine the role of surgery, chemotherapy, radiation and other treatments.",
+        "Oesophageal Cancer can require complex multimodality treatment. Careful staging helps determine the role of surgery, chemotherapy, radiation and other treatments.",
 
       why: [
         "Detailed staging before treatment",
@@ -611,9 +611,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       faqs: [
         {
-          q: "What is esophageal cancer?",
+          q: "What is Oesophageal Cancer?",
           a:
-            "Esophageal cancer occurs when malignant cells develop within the esophagus, the tube that carries food to the stomach."
+            "Oesophageal Cancer occurs when malignant cells develop within the esophagus, the tube that carries food to the stomach."
         },
         {
           q: "What are early symptoms?",
@@ -621,7 +621,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Possible symptoms include progressive difficulty swallowing, unexplained weight loss and chest discomfort."
         },
         {
-          q: "What causes esophageal cancer?",
+          q: "What causes Oesophageal Cancer?",
           a:
             "Risk factors vary by cancer type and may include tobacco, alcohol, chronic reflux and Barrett's esophagus."
         },
@@ -636,7 +636,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Treatment can include surgery, chemotherapy, radiation, targeted treatment or immunotherapy depending on stage and tumour characteristics."
         },
         {
-          q: "Can esophageal cancer be treated?",
+          q: "Can Oesophageal Cancer be treated?",
           a:
             "Treatment depends strongly on stage and individual clinical factors. Earlier disease generally provides more treatment options."
         }

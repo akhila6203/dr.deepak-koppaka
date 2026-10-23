@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       slug: "esophageal-cancer",
 
-      title: "Esophageal Cancer",
+      title: "Oesophageal Cancer",
 
       image:
         "assets/images/cancer/esophageal-cancer.jpg",

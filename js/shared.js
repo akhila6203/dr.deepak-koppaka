@@ -179,7 +179,7 @@ const FOOTER_ADDRESS =
 
   <a href="cancer-details.html?cancer=esophageal-cancer">
     <span></span>
-    Esophageal Cancer
+    Oesophageal Cancer
   </a>
 
   <a href="cancer-details.html?cancer=stomach-cancer">
@@ -424,7 +424,7 @@ const FOOTER_ADDRESS =
               </a>
 
               <a href="cancer-details.html?cancer=esophageal-cancer">
-                Esophageal Cancer
+                Oesophageal Cancer
               </a>
 
               <a href="cancer-details.html?cancer=stomach-cancer">
@@ -731,7 +731,7 @@ const FOOTER_ADDRESS =
 
     <li>
       <a href="cancer-details.html?cancer=esophageal-cancer">
-        Esophageal Cancer
+        Oesophageal Cancer
       </a>
     </li>
 
